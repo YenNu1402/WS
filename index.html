@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaunchPage - Creative Landing Page Template</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <ul class="logo">
+          <b>LaunchPage</b>
+        </ul>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Testimonials</li>
+          <li>Work</li>
+          <li>Team</li>
+          <li>Features</li>
+          <li>Pricing</li>
+        </ul>
+        <div class="group">
+          <button class="getstarted">Get Started</button>
+          <i class="fa-solid fa-bars menu-icon" onclick="openModal()"></i>
+        </div>
+      </div>
+      <div class="modal">
+        <i class="fa-solid fa-bars menu-icon-close" onclick="closeModal()"></i>
+        <ul>
+          <li>Platform</li>
+          <li>Solution</li>
+          <li>Pricing</li>
+          <li>Resource</li>
+          <li>Company</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+      <div class="paragraph1">
+        <!-- <h1>Award-Winning Agency Based In Manchested</h1> -->
+        <p>
+          <span>Award-Winning Agency Based In Manchested</span>
+          Excepteur sint occaecat cupidatat nonet proident, vante nisn culpa qui
+          officia deserunt etimus quis autem nets lorem entimus velis netsad.
+        </p>
+      </div>
+    </div>
+    <div class="container1">
+      <form action="group1">
+        <div class="company-name">
+          <label for="">Company Name*</label>
+          <input
+            id="company-name"
+            type="text"
+            placeholder="Company Name"
+            required
+          />
+        </div>
+        <div class="email">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="Email Address" required />
+        </div>
+        <div class="group2">
+          <label for="need"></label>
+          <select name="" id="">
+            <option value="need-for">We need LaunchPage for...</option>
+            <option value="support">Our Support Team</option>
+            <option value="sale">Our Sales Department</option>
+          </select>
+          <button class="start-free">START MY FREE 14-DAY</button>
+        </div>
+      </form>
+      <br />
+      <hr />
+    </div>
+  </body>
+  <script>
+    const modal = document.querySelector(".modal");
+    function openModal() {
+      console.log(modal);
+      modal.style.display = "flex";
+    }
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  </script>
+</html>
